@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  padding: 0 2rem 0 3rem;
 }
 header nav {
   width: 100%;
@@ -148,7 +149,65 @@ header nav a {
   font-weight: bolder;
   color: black;
 }
-.intro div .working-pic {
+.intro {
+  padding: 0 1rem;
+  background-color: #f0f0f5;
+}
+.intro .div-one {
+  padding: 2rem 0;
+  border-bottom: 1px solid #8a8987;
+}
+.intro .div-one .working-pic {
   width: 35%;
   height: 35vh;
+}
+.intro .div-one h1 {
+  font-size: 4rem;
+}
+.intro .div-one h5 {
+  font-size: 2rem;
+}
+.intro .div-two {
+  padding: 2rem 0;
+}
+.intro .div-two p {
+  padding: 2rem 0;
+}
+.intro .div-two button {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  background-color: gray;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.details .div-one {
+  width: 50%;
+}
+.details .div-one h2 {
+  font-size: 3rem;
+}
+.details .div-one p {
+  padding: 1rem 2rem 1rem 0;
+}
+.details .div-two {
+  width: 50%;
+}
+.details .div-two h3 {
+  font-size: 2.5rem;
+}
+.details .div-two li {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: 1px solid #f0f0f5;
+}
+.work-history h3 {
+  font-size: 2.5rem;
+}
+.work-history table {
+  width: 100%;
+  border: 1px solid green;
 }
