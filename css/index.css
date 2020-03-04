@@ -141,6 +141,11 @@ header nav {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header nav a {
   text-decoration: none;
   padding: 1rem 0rem 1rem 3rem;
@@ -152,6 +157,12 @@ header nav a {
 .intro {
   background-color: #f0f0f5;
   padding: 5rem 2rem 5rem 4rem;
+}
+@media (max-width: 500px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .intro .div-one {
   padding: 2.5rem 0;
@@ -188,8 +199,18 @@ header nav a {
   justify-content: space-between;
   padding: 2.5rem 0;
 }
+@media (max-width: 500px) {
+  .details {
+    flex-direction: column;
+  }
+}
 .details .div-one {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .details .div-one {
+    width: 100%;
+  }
 }
 .details .div-one h2 {
   font-size: 3rem;
@@ -201,6 +222,11 @@ header nav a {
 }
 .details .div-two {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .details .div-two {
+    width: 100%;
+  }
 }
 .details .div-two h3 {
   font-size: 2.5rem;
