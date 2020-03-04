@@ -52,13 +52,24 @@ table {
 * {
     box-sizing: border-box;
 }
-
+@mainfontcolor: black;
+@mainpadding: 5rem 2rem 5rem 4rem;
+@innerpadding: 2.5rem 0;
+@pfont: 2rem;
+.innerFont(){
+	padding: 2.5rem 0;
+	font-size: 2rem;
+}
+.fontSizeWeight(){
+	font-size: 2rem;
+	font-weight: bold;
+}
 html, body {
 	height: 100%;
 	font-size: 62.5%;
-	padding: 0 2rem 0 3rem;
+	padding: @mainpadding; 
 }
-@mainfontcolor: black;
+
 header{
 	nav{
 		width: 100%;
@@ -68,8 +79,7 @@ header{
 			text-decoration: none;
 			padding: 1rem 0rem 1rem 3rem;
 			margin: 3rem 0;
-			font-size: 1.5rem;
-			font-weight: bolder;
+			.fontSizeWeight();
 			color: @mainfontcolor;
 		}
 
@@ -77,29 +87,30 @@ header{
 }
 
 .intro{
-	padding: 0 1rem;
 	background-color: #f0f0f5;
+	padding: @mainpadding; 
 	.div-one{
-		padding: 2rem 0;
+		padding: @innerpadding;
 		border-bottom: 1px solid #8a8987;
 		.working-pic{
-			width: 35%;
-			height: 35vh;
+			width: 22%;
 		}
 		h1{
 			font-size: 4rem;
+			padding: @innerpadding;
 		}
 		h5{
-			font-size: 2rem;
+			.fontSizeWeight();
 		}
 	}
 	.div-two{
-		padding: 2rem 0;
+		padding: @innerpadding;
 		p{
-			padding: 2rem 0;		
+			.innerFont();
+			line-height: 3rem;
 		}
 		button{
-			font-size: 2rem;
+			font-size: @pfont;
 			padding: 1rem;
 			border-radius: 5px;
 			color: white;
@@ -110,6 +121,7 @@ header{
 .details{
 	display: flex;
 	justify-content: space-between;
+	padding: @innerpadding;
 	.div-one{
 		width: 50%;
 		h2{
@@ -117,16 +129,19 @@ header{
 		}
 		p{
 			padding: 1rem 2rem 1rem 0;
+			font-size: @pfont;
+			line-height: 3rem;
 		}
 	}
 	.div-two{
 		width: 50%;
 		h3{
 			font-size: 2.5rem;
+			padding-bottom: 1rem;
 		}
 		li {
 			padding: 1rem 2rem;
-			font-size: 1.5rem;
+			font-size: @pfont;
 			border: 1px solid #f0f0f5;
 		}
 	}
@@ -135,10 +150,32 @@ header{
 	h3{
 		font-size: 2.5rem;
 	}
+	table, th , td {
+		padding: 2rem;
+	}
+
 	table{
 		width: 100%;
-		border: 1px solid green;
+		.category{
+			.fontSizeWeight();
+			border-top: 1px solid #f0f0f5;
+			text-align:left;
+		}
+		.table-data{
+			border-top: 1px solid #f0f0f5;
+			font-size: @pfont;
+		}
+		.shade{
+			background-color: #f6f7f5;
+		}
+
 	}
 }
-
+footer{
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: gray;
+	.innerFont();
+}
 
